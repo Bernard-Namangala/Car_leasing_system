@@ -19,5 +19,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/home', 'App\Http\Controllers\pageController@index');
+Route::get('/', 'App\Http\Controllers\pageController@index');
 Route::get('/navigation', 'App\Http\Controllers\pageController@navigation');
+Auth::routes();
