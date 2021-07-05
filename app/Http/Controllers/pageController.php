@@ -17,4 +17,8 @@ class pageController extends Controller
       $para = "Cars Available";
       return view('pages.navigation', compact('para'));
     }
+
+    public function getCar(){
+      return view('pages.getCar');
+    }
 }
